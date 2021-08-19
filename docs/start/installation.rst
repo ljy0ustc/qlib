@@ -44,6 +44,24 @@ Use the following code to make sure the installation successful:
    >>> import qlib
    >>> qlib.__version__
    <LATEST VERSION>
+   
+ 
+You can cd to the qlib/examples to run the example:
+ 
+ .. code-block:: bash
+ 
+      $ qrun benchmarks/LightGBM/workflow_config_lightgbm_Alpha158.yaml
+      
+.. note::
+   If you meet the error like instruments not exists for csi300, you can delete the data and download it again with:
+   
+   .. code-block:: bash
+
+      $ python scripts/get_data.py qlib_data --target_dir ~/.qlib/qlib_data/cn_data --region cn
+      
+.. note::
+   You may need to install catboost and xgboost before you do run the example.
+
 
 
 =====================
